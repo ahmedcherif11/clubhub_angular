@@ -1,0 +1,220 @@
+
+.section-plans {
+  
+    padding: 2rem 8rem 5rem 5rem;
+  }
+  
+  .card {
+    -webkit-perspective: 150rem;
+            perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 20rem;
+    width: 17rem;
+    border-radius: 20px;
+    border: 2px solid #79D1EF;
+  }
+ /* Style the individual cards */
+.card {
+    flex: 0 0 300px; /* Fixed width for each card */
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    background-color: #fff;
+  }
+
+.heading-with-image {
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Vertically center the items */
+  }
+
+.heading-with-image h2 {
+    margin-right: 20px; /* Adjust the margin as needed */
+  }
+  
+.blog-slider5 {
+    width: 90%;
+    position: relative;
+    height: 50%;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    background: #F3F3F3;
+    box-shadow: 0px 0px 35px rgba(61, 61, 61, 0.28);
+    padding: 25px;
+    border-radius: 25px;
+
+    transition: all 0.3s;
+  }
+
+  .card-container {
+    display: flex;
+    /* Remove the following line to fix the issue */
+     overflow-x: scroll; 
+    padding: 20px;
+    gap: 20px; /* Spacing between cards */
+    /* Customize the scrollbar */
+    scrollbar-width: thin;
+    scrollbar-color: #007BFF #fff; /* Change scrollbar color and thumb color */
+  }
+  .video-containerr {
+    display: flex;
+    justify-content: flex-start; /* Adjust justification to move to the left */
+    align-items: center;
+    padding: 20px;
+    
+      /* Add animation effect */
+      animation: fadeIn 1s ease-in-out;
+      height: auto;
+  }
+  
+
+  .row {
+    max-width: 114rem;
+    margin: 0 auto;
+    
+    
+  }
+
+  .card__side {
+    height: 20rem;
+    -webkit-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+    position: absolute;
+    border: 2px solid #79D1EF;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border-radius: 20px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+            box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  }
+  
+  .card__side--front {
+    background-color: #fff;
+  }
+  
+  /*
+  .card__side--front-1 {
+    background: linear-gradient(-45deg, #2D2F44, #79D1EF);
+  }
+  
+  */
+  
+  .card__side--back {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  
+  /*
+  .card__side--back-1 {
+    background: linear-gradient(-45deg,  #2D2F44, #79D1EF);
+  }
+  */
+  
+  .card:hover .card__side--front-1 {
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+  }
+  
+  .card:hover .card__side--back {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  
+  .card__title {
+    height: 12rem; /* Adjust the title height as needed */
+    padding: 2rem 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .card__title--1 .fas {
+    font-size: 3rem;
+  }
+  
+  .card__title--2 .fas {
+    font-size: 5rem;
+  }
+  
+  .card__title--3 .fas {
+    font-size: 5rem;
+  }
+
+
+  
+.card__heading {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    width: 75%;
+  }
+  
+  .card__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+  
+  .card__details {
+    padding: 0 2rem 2rem;
+  }
+  
+  .card__details ul {
+    list-style: none;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .card__details ul li {
+    text-align: center;
+    font-size: 1.2rem; /* Adjust the font size for details */
+    padding: 0.5rem;
+  }
+  
+  .card__details ul li:not(:last-child) {
+    border-bottom: 1px solid #eee;
+  }
+  
+.card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+  
+
+  
+.rounded-image {
+    border-radius: 50%; /* This value rounds the corners to make it circular */
+    overflow: hidden; /* This hides any parts of the image that extend beyond the container */
+    width: 200px; /* Set a width for your image container */
+    height: 200px; /* Set a height for your image container */
+}
+
+/* Style the image within the rounded container */
+.rounded-image img {
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Make the image fill the container */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
