@@ -6,7 +6,7 @@
 
 		<input id="tab-2" type="radio" name="tab" class="sign-up" ><label for="tab-2" class="tab">Sign Up </label>
 
-		<input id="tab-3" type="radio" name="tab" class="sign-up-club" ><label for="tab-3" class="tab">Sign Up As A Club </label>
+	
 
 
 
@@ -91,75 +91,7 @@
 
 
 
-          <!-- Sign up as a club -->
-
-
-		<div class="sign-up-club-htm">
-		<form [formGroup]="signUpClubForm" (ngSubmit)="onSignUpClub()">
-
-
-           
-
-
-			<div class="group">
-				<label for="club" class="label" required>Club Name</label>
-				<input id="club" type="text" class="input" >
-				<!--message d erreur-->
-				<div *ngIf="signUpClubForm.controls['clubName'].invalid && signUpClubForm.controls['clubName'].touched"
-                style="text-align: center; width: 500px; margin-left: 80px">
-             user name is a Required Field !
-           </div>
-			</div>
-
-			<div class="group">
-				<label for="creationdate" class="label" required>Creation Date</label>
-				<input id="creationdate" type="date" class="input" >
-			</div>
-
-	
-			<div class="group">
-				<label for="university" class="label">University</label>
-				<input id="university" type="text" class="input" >
-			</div>
-
-
-
-			<div class="group">
-			<label for="field" class="label">Field</label>
-			<select class="input"  formControlName="field" required>
-				
-				<option value="Artistic" class="label">Artistic</option>
-				<option value="entreuprenariat" class="label">Entreuprenariat</option>
-				<option value="Sport" class="label">Sport</option>
-				<option value="hard skills" class="label">Hard skills</option>
-				<option value="Cultural" class="label">Cultural</option>
-				<option value="Political" class="label">Political</option>
-				<option value="Other" class="label">Other</option>
-			  </select>
-			 
-			</div>
-
-
-
-            <div class="group">
-				<label for="username" class="label" required>Username</label>
-				<input id="username" type="text" class="input">
-			</div>
-
-
-			<div class="group">
-				<label for="password" class="label">Password</label>
-				<input id="password" type="password" class="input" data-type="password">
-			</div>
-			
-		
-			<div class="group">
-				<input type="submit" class="button" value="Sign Up As A Club">
-			</div>
-		
-		</form>
-		</div>
-	
+        
 	
 
     </div>

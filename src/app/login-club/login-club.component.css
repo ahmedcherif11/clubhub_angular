@@ -50,7 +50,6 @@ body {
   .login-html input[type="radio"]:checked + label.tab {
 	background: #1161ee;
 	color: white;
-  
   }
   
   /* Default hidden content */

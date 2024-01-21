@@ -27,6 +27,15 @@ body {
 	padding: 90px 70px 50px 70px;
 	background: rgba(40, 57, 101, .9);
   }
+  .login-html .login-buttons {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
   
   /* Hide the default radio button */
   .login-html input[type="radio"] {
@@ -50,7 +59,6 @@ body {
   .login-html input[type="radio"]:checked + label.tab {
 	background: #1161ee;
 	color: white;
-  
   }
   
   /* Default hidden content */
@@ -71,7 +79,7 @@ body {
   }
   
 
-.login-form {
+/* .login-form {
     min-height: 345px;
     position: relative;
 }
@@ -86,17 +94,16 @@ body {
     width: 100%;
     color: #fff;
     display: block;
-}
-
-.login-form .group .input,
-.login-form .group .button {
+} */
+ .button {
     border: none;
-    padding: 15px 20px;
+    padding: 30px 40px;
     border-radius: 25px;
-    background: rgba(255, 255, 255, .1);
+    margin-bottom: 40px;
+  
 }
 
-.login-form .group .button {
+ .button {
     background: #1161ee;
     color: white;
     font-weight: bold;

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
-import { AppRoutingModule } from './app-routing.module';
+import {  ROUTING } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
@@ -10,6 +10,8 @@ import { ProfilComponent } from './profil/profil.component';
 import { CreatePostComponent } from './create-post/create-post.component';
 import { FormsModule } from '@angular/forms';
 import { FirstPageComponent } from './first-page/first-page.component';
+import { LoginClubComponent } from './login-club/login-club.component';
+import { MainLoginComponent } from './main-login/main-login.component';
 
 
 @NgModule({
@@ -20,11 +22,13 @@ import { FirstPageComponent } from './first-page/first-page.component';
     HomeComponent,
     ProfilComponent,
     CreatePostComponent,
-    FirstPageComponent
+    FirstPageComponent,
+    LoginClubComponent,
+    MainLoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    ROUTING,
     FormsModule,
     ReactiveFormsModule,
   ],
